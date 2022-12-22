@@ -39,5 +39,6 @@
 		"lib": ["ESNext"],
 		"target": "ES2021",
 		"useDefineForClassFields": true
-	}
+	},
+	"include": ["src", "tsup.config.ts", "env.d.ts"]
 }
