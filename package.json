@@ -5,10 +5,10 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"dev": "nodemon",
-		"build": "tsup",
+		"build": "tsup-node",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint src --ext .js,.ts --format=pretty",
 		"format": "prettier --write . && cross-env TIMING=1 eslint src --ext .js,.ts --fix --format=pretty",
-		"watch": "tsup --watch",
+		"watch": "tsup-node --watch",
 		"postinstall": "husky install"
 	},
 	"keywords": [],
@@ -41,6 +41,8 @@
 	"dependencies": {
 		"@sapphire/decorators": "^5.0.0",
 		"@sapphire/framework": "^3.1.4",
-		"discord.js": "^14.7.1"
+		"discord.js": "^13.12.0",
+		"dotenv": "^16.0.3",
+		"tslib": "^2.4.1"
 	}
 }
