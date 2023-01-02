@@ -1,12 +1,10 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-	entry: ['src/**/*.ts'],
-	external: [],
-	noExternal: [],
+	entry: ['src/**'],
 	platform: 'node',
 	tsconfig: 'tsconfig.json',
-	format: ['esm', 'cjs'],
+	format: ['cjs'],
 	target: 'es2022',
 	skipNodeModulesBundle: true,
 	clean: true,

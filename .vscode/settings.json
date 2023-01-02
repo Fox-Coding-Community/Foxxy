@@ -11,5 +11,8 @@
 	"editor.tabSize": 4,
 	"npm.packageManager": "pnpm",
 	"typescript.tsdk": "node_modules/typescript/lib",
-	"prettier.endOfLine": "lf"
+	"prettier.endOfLine": "lf",
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	}
 }

@@ -5,7 +5,20 @@
 		"project": "./tsconfig.eslint.json"
 	},
 	"rules": {
-		"@typescript-eslint/consistent-type-definitions": ["error", "interface"]
+		"@typescript-eslint/consistent-type-definitions": [
+			"error",
+			"interface"
+		],
+		"import/extensions": [
+			"error",
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		]
 	},
 	"ignorePatterns": ["**/dist/*"],
 	"env": {
