@@ -1,9 +1,9 @@
 import './injectors';
 import 'dotenv/config';
 
+import process from 'node:process';
 import { PrismaClient } from '@prisma/client';
 import { SapphireClient } from '@sapphire/framework';
-import process from 'node:process';
 
 const client = new SapphireClient({
 	intents: ['GUILDS', 'GUILD_MESSAGES'],
